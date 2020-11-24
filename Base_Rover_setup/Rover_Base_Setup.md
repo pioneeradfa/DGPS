@@ -99,4 +99,8 @@ STATUS_GBAS_FIX = 2	|	with ground-based augmentation
 ## RFD900 Long range modem:
 Config (Screen shot)  Baud rate: 115200 
 
+
+
+##Reference
+1. https://drotek.gitbook.io/rtk-f9p-positioning-solutions/
  
