@@ -6,6 +6,8 @@ This manual provides information for setting up the following modules:
 
 Config Rover and Base Sirius-F9P devices using u-center software
 Download [u-center software!](https://www.u-blox.com/en/product/u-center)
+Configure RFD900 using RFD Modem tool
+Download [RFD Modem tool!](https://files.rfdesign.com.au/tools/)
 
 # BASE [Drotek F9P]: (Windows)
 The main purpose of the base is to provide a known position to the RTK system in order for the RTKLib to compute the exact position of the rover module. 
