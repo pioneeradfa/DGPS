@@ -3,20 +3,30 @@
 Config Rover and Base Sirius-F9P using u-center software
 Download [u-center software!](https://www.u-blox.com/en/product/u-center)
 ## BASE [Drotek F9P]: (Windows)
+The main purpose of the base is to provide a known position to the RTK system in order for the RTKLib to compute the exact position of the rover module. 
+It's then necessary to have a base whose position doesn't vary in time, and with the most accurate self-positioning ability, as the more accurate is the base positioning, the more accurate will be the rover module positioning.
+![Image of Base](https://github.com/pioneeradfa/DGPS/blob/master/Base_Rover_setup/images/base.png)
 Download RTKLIB (windows version)
 [RTKLIB Github windows Download!](https://github.com/tomojitakasu/RTKLIB_bin.git)
 
-Open strsvr window:
+###Open strsvr window:
+![Image of strsvr](https://github.com/pioneeradfa/DGPS/blob/master/Base_Rover_setup/images/strsvr_open.png)
 ```
 E:\RTKLIB_bin-master\RTKLIB_bin-master\bin\strsvr.exe
 ```
-###Setting value of serial baud rate
+### Setting up strsvr Serial Options
+![Image of strsvr_serial](https://github.com/pioneeradfa/DGPS/blob/master/Base_Rover_setup/images/strsvr_serial.png)
+
+Setting value of serial baud rate
 
 1. Stream: (0) Input  
 - Type: Serial   
 - Port: COMx
 - Bitrate (bps): 115200
 
+###Setting up NTRIP Server Option
+
+![Image of strsvr_ntrip](https://github.com/pioneeradfa/DGPS/blob/master/Base_Rover_setup/images/strsvr_ntrip.png)
 2. Stream: (1) Output 
 - Type:NTRIP Server
 - NTRIP Caster Host: rtk2go.com 
@@ -96,7 +106,16 @@ STATUS_NO_FIX =  -1	|	Unable to fix position
 STATUS_FIX = 0	|	Unaugmented fix
 STATUS_SBAS_FIX = 1	|	with satellite-based augmentation
 STATUS_GBAS_FIX = 2	|	with ground-based augmentation
-## RFD900 Long range modem:
-Config (Screen shot)  Baud rate: 115200 
 
+## RFD900 Long range modem:
+![Image of RFD900](https://github.com/pioneeradfa/DGPS/blob/master/Base_Rover_setup/images/RFD900.png)
+
+###Config (Screen shot)  
+Baud rate: 115200 
+
+![Image of RFD900](https://github.com/pioneeradfa/DGPS/blob/master/Base_Rover_setup/images/RFD900_config_success.png)
+
+
+##Reference
+1. https://drotek.gitbook.io/rtk-f9p-positioning-solutions/
  
