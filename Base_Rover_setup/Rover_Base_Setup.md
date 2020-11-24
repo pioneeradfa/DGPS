@@ -4,10 +4,10 @@ This manual provides information for setting up the following modules:
 * Rover - Sirius RTK GNSS (F9P)
 * RFD900+ Long Range Radio modem
 
-Config Rover and Base Sirius-F9P devices using u-center software
+Configure **Rover and Base Sirius-F9P** devices using u-center software
 Download [u-center software!](https://www.u-blox.com/en/product/u-center)
 
-Configure RFD900 using RFD Modem tool
+Configure **RFD900 modem** using RFD Modem tool
 Download [RFD Modem tool!](https://files.rfdesign.com.au/tools/)
 
 # BASE [Drotek F9P]: (Windows)
