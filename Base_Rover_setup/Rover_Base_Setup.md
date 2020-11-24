@@ -1,9 +1,16 @@
-# Installation Steps for Base and Rover 
+# Installation Steps for Base and Rover Sirius-F9P and RFD900 modem 
+This manual provides information for setting up the following modules:
+* Base - Sirius RTK GNSS (F9P)
+* Rover - Sirius RTK GNSS (F9P)
+* RFD900+ Long Range Radio modem
 
-Config Rover and Base Sirius-F9P using u-center software
+Configure **Rover and Base Sirius-F9P** devices using u-center software
 Download [u-center software!](https://www.u-blox.com/en/product/u-center)
 
-## BASE [Drotek F9P]: (Windows)
+Configure **RFD900 modem** using RFD Modem tool
+Download [RFD Modem tool!](https://files.rfdesign.com.au/tools/)
+
+# BASE [Drotek F9P]: (Windows)
 The main purpose of the base is to provide a known position to the RTK system in order for the RTKLib to compute the exact position of the rover module. 
 It's then necessary to have a base whose position doesn't vary in time, and with the most accurate self-positioning ability, as the more accurate is the base positioning, the more accurate will be the rover module positioning.
 ![Image of Base](https://github.com/pioneeradfa/DGPS/blob/master/Base_Rover_setup/images/base.png)
@@ -38,7 +45,7 @@ Setting value of serial baud rate
 - Mountpoint: unswadfa
 - Password: dsto
 
-## RTK ROVER [Drotek F9P]:
+# RTK ROVER [Drotek F9P]:
 
 ![Image of Rover](https://github.com/pioneeradfa/DGPS/blob/master/Base_Rover_setup/images/rover.png)
 
@@ -80,7 +87,7 @@ $ ./str2str -in ntrip://:dsto@rtk2go.com:2101/unswadfa -out serial://ttyACM0:115
 
 ### Send RTK calculation results with ROS Topic with ublox ROS package
 
-Receive the RTK-GNSS Fix solution of Sirius Rover ìsensor_msgs/NavSatFixî and publish it with ROS Topic
+Receive the RTK-GNSS Fix solution of Sirius Rover ‚Äúsensor_msgs/NavSatFix‚Äù and publish it with ROS Topic
 
 ### ROS_LAUNCH
 
@@ -161,7 +168,7 @@ STATUS_FIX = 0	|	Unaugmented fix
 STATUS_SBAS_FIX = 1	|	with satellite-based augmentation
 STATUS_GBAS_FIX = 2	|	with ground-based augmentation
 
-## RFD900 Long range modem:
+# RFD900 Long range modem:
 ![Image of RFD900](https://github.com/pioneeradfa/DGPS/blob/master/Base_Rover_setup/images/RFD900.png)
 
 ### Config (Screen shot)  
