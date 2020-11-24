@@ -10,3 +10,6 @@ sudo chmod 666 /dev/ttyACM0
 
 ## ROS_Launch
 roslaunch ublox_gps rover_sirius.launch
+
+#Installation Steps for Base and Rover Sirius-F9P and RFD900 modem
+https://github.com/pioneeradfa/DGPS/blob/master/Base_Rover_setup/Rover_Base_Setup.md
