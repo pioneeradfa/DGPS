@@ -3,10 +3,8 @@
 sudo chmod 666 /dev/ttyACM0
 lab
 
-
-
 echo "Launching dgps ublox..."
-roslaunch ublox_gps ublox_zed-f9p.launch &
+roslaunch ublox_gps rover_sirius.launch &
 pid="$pid $!"
 
 
